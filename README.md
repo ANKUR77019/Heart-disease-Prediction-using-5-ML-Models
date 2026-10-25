@@ -181,40 +181,73 @@ Mean absolute SHAP values indicate the average magnitude of a feature's contribu
 
 The SHAP results help explain what the trained model relied on in this dataset. They should not be interpreted as evidence that the same feature ranking would apply to other patient populations.
 
-## Screenshots and results
+## Screenshots and Results
 
-I saved screenshots and generated outputs during the project so the analysis and its results can be inspected.
+I saved screenshots during the different stages of the project to show the data exploration, preprocessing, model evaluation, and SHAP analysis.
 
-### Data exploration
+### 1. Data Exploration
 
-| Screenshot | What it shows |
-|---|---|
-| `docs/screenshots/data_exploration/dataset_inspection.png` | Dataset inspection |
-| `docs/screenshots/data_exploration/missing_values_and_data_types.png` | Missing values and feature types |
-| `docs/screenshots/data_exploration/target_distribution.png` | Target distribution |
-| `docs/screenshots/data_exploration/age_distribution.png` | Age distribution |
-| `docs/screenshots/data_exploration/categorical_features.png` | Categorical feature distributions |
-| `docs/screenshots/data_exploration/cholesterol_boxplot.png` | Cholesterol distribution |
-| `docs/screenshots/data_exploration/outlier_analysis.png` | Outlier investigation |
-| `docs/screenshots/data_exploration/data_exploration.png` | Additional exploration output |
+**Dataset inspection**
 
-### Preprocessing and training
+![Dataset inspection](docs/screenshots/data_exploration/dataset_inspection.png)
 
-| Screenshot | What it shows |
-|---|---|
-| `docs/screenshots/preprocessing/preprocessing_pipeline.png` | Preprocessing workflow |
-| `docs/screenshots/model_training/logistic_regression_baseline.png` | Logistic Regression baseline |
+**Missing values and data types**
 
-### Model evaluation and explainability
+![Missing values and data types](docs/screenshots/data_exploration/missing_values_and_data_types.png)
 
-| Screenshot | What it shows |
-|---|---|
-| `docs/screenshots/model_evaluation/cross_validation_results.png` | Cross-validation results |
-| `docs/screenshots/model_evaluation/test_set_results.png` | Test-set evaluation |
-| `docs/screenshots/shap_analysis/shap_feature_importance_output.png` | SHAP analysis output |
+**Target distribution**
 
-The numerical results are also saved as CSV files, and the SHAP feature-importance plot is available in the results directory.
+![Target distribution](docs/screenshots/data_exploration/target_distribution.png)
 
+**Age distribution**
+
+![Age distribution](docs/screenshots/data_exploration/age_distribution.png)
+
+**Categorical feature distributions**
+
+![Categorical feature distributions](docs/screenshots/data_exploration/categorical_features.png)
+
+**Cholesterol distribution**
+
+![Cholesterol distribution](docs/screenshots/data_exploration/cholesterol_boxplot.png)
+
+**Outlier analysis**
+
+![Outlier analysis](docs/screenshots/data_exploration/outlier_analysis.png)
+
+**Additional data exploration**
+
+![Data exploration](docs/screenshots/data_exploration/data_exploration.png)
+
+### 2. Preprocessing and Model Training
+
+**Preprocessing pipeline**
+
+![Preprocessing pipeline](docs/screenshots/preprocessing/preprocessing_pipeline.png)
+
+**Logistic Regression baseline**
+
+![Logistic Regression baseline](docs/screenshots/model_training/logistic_regression_baseline.png)
+
+### 3. Model Evaluation
+
+**Cross-validation results**
+
+![Cross-validation results](docs/screenshots/model_evaluation/cross_validation_results.png)
+
+**Held-out test-set results**
+
+![Test-set evaluation](docs/screenshots/model_evaluation/test_set_results.png)
+
+### 4. Model Explainability Using SHAP
+
+I used SHAP to examine the features that contributed most to the CatBoost model's predictions.
+
+![SHAP feature importance analysis](docs/screenshots/shap_analysis/shap_feature_importance_output.png)
+
+The generated feature-importance plot is also available here:
+
+![CatBoost SHAP feature importance](results/figures/catboost_shap_importance.png)
 ## Project structure
 
 ```text
