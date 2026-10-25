@@ -1,0 +1,2 @@
+model,test_accuracy,test_roc_auc,training_records,testing_records
+Logistic Regression,0.8852459016393442,0.9675324675324676,242,61

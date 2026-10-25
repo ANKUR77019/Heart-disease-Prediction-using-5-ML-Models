@@ -1,0 +1,32 @@
+# Python
+__pycache__/
+*.py[cod]
+
+# Virtual environment
+.venv/
+
+# CatBoost training logs
+catboost_info/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Intermediate processed data
+data/processed/
+
+# OS files
+.DS_Store
+
+# Temporary and generated files
+*.log
+*.tmp
+
+# Python test and coverage artifacts
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Environment variables and secrets
+.env
+.env.*
+!.env.example
